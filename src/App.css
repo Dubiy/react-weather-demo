@@ -31,3 +31,14 @@
     transform: rotate(360deg);
   }
 }
+
+
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.App .CityList {
+  flex-basis: 30%;
+}
+
