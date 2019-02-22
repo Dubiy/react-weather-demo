@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import City from './City'
-import AddCity from './AddCity'
+import City from '../City/City'
+import AddCity from '../AddCity/AddCity'
+import './CityList.css'
 
 class  CityList extends Component {
 	render() {

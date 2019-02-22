@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
 import './App.scss';
-import CityList from './CityList'
+import CityList from './components/CityList/CityList'
 import axios from 'axios';
-import config from './config';
-import FilteredContent from "./FilteredContent";
+import config from './config/config';
+import FilteredContent from "./components/FilteredContent/FilteredContent";
 
 class App extends Component {
 	constructor(props) {
@@ -47,9 +47,6 @@ class App extends Component {
 			<div className="App">
 				<CityList cities={this.state.cities} onSubmit={this.addCity}/>
                 <FilteredContent cities={this.state.cities}/>
-
-
-				{/*<Content cities={this.state.cities}/>*/}
 			</div>
 		);
 	}

@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "CityList.css",
+	"sources": [
+		"CityList.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,SAAS,CAAC;EACR,UAAU,EAAE,GAAG,GAChB"
+}
