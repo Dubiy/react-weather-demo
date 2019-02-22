@@ -26,8 +26,10 @@ class App extends Component {
 		}
 	}
 
-	componentDidMount() {
+	async componentDidMount() {
 		this.state.cities.forEach(city => this.getInfo(city));
+
+		console.log(await (await fetch('/api/data')).json());
 	}
 
 	addCity = (name) => {
