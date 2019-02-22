@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
-import logo from './assets/logo.svg';
 import './App.scss';
 import CityList from './components/CityList/CityList'
 import axios from 'axios';
 import config from './config/config';
-import FilteredContent from "./components/FilteredContent/FilteredContent";
+import Filter from "./components/Filter/Filter";
 import Header from "./components/Header/Header";
 
 class App extends Component {
@@ -16,15 +15,14 @@ class App extends Component {
 				{
 					name: 'Cherkasy'
 				},
-				{
-					name: 'Zolotonosha'
-				},
-				{
-					name: 'Smila'
-				},
-				{
-					name: 'Bangkok'
-				}]
+                {
+                    name: 'Bangkok'
+                },
+                {
+                    name: 'Ankara'
+                }
+
+				]
 		}
 	}
 
@@ -49,7 +47,7 @@ class App extends Component {
                 <Header />
                 <div className="App-container">
                     <CityList cities={this.state.cities} onSubmit={this.addCity}/>
-                    <FilteredContent cities={this.state.cities}/>
+                    <Filter cities={this.state.cities}/>
                 </div>
 			</div>
 		);

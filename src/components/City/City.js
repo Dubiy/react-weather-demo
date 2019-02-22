@@ -3,15 +3,29 @@ import './City.css'
 
 class City extends Component {
 	render() {
-		const {name, temp} = this.props.city;
+		const {name, temp, cloudIndex} = this.props.city;
 
 		return (
-			<li className="City">
+			<div className="City">
 				<div className="City-title">{name}</div>
 				<div className="City-temp">{temp} °C</div>
-			</li>
+                <CloudIcon cloudIndex={cloudIndex} />
+			</div>
 		);
 	}
 }
 
 export default City;
+
+function CloudIcon(props) {
+	const {cloudIndex} = props;
+	const icons = ["☀️","🌤","⛅","️🌥","☁️"];
+	const icon = icons[parseInt(cloudIndex / 100 * icons.length)];
+
+	return (
+		<div className="CloudIcon">
+			<span>({cloudIndex})</span> {icon}
+		</div>
+	);
+
+}
