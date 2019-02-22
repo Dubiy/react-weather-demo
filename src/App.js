@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import CityList from './CityList'
 import axios from 'axios';
 import config from './config';
