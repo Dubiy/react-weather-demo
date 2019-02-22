@@ -1,0 +1,16 @@
+.City {
+    height: 35px;
+    margin-bottom: 1px;
+    background-color: rgba(0,0,0,0.05);
+    text-align: left;
+    padding: 5px;
+
+    &-name {
+
+    }
+
+    &-temp {
+        float: right;
+        opacity: 0.6;
+    }
+}

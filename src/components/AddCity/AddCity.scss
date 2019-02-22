@@ -1,0 +1,20 @@
+.AddCity {
+
+
+  &-form {
+    display: flex;
+    flex-direction: row;
+
+    &-name {
+      display: block;
+      flex-basis: 70%;
+    }
+
+    &-submit {
+      display: block;
+      flex-basis: 30%;
+    }
+  }
+
+
+}

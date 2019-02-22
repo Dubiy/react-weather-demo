@@ -7,7 +7,7 @@ class  CityList extends Component {
 	render() {
 		return (
 			<div className="CityList">
-				<ul>
+				<ul className="CityList-list">
 					{ this.props.cities.map((city, key) => <City city={city} key={key}/>) }
 				</ul>
 

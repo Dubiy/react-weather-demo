@@ -1,3 +1,9 @@
 .CityList {
   flex-basis: 30%;
+
+  &-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }

@@ -5,6 +5,7 @@ import CityList from './components/CityList/CityList'
 import axios from 'axios';
 import config from './config/config';
 import FilteredContent from "./components/FilteredContent/FilteredContent";
+import Header from "./components/Header/Header";
 
 class App extends Component {
 	constructor(props) {
@@ -45,8 +46,11 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<CityList cities={this.state.cities} onSubmit={this.addCity}/>
-                <FilteredContent cities={this.state.cities}/>
+                <Header />
+                <div className="App-container">
+                    <CityList cities={this.state.cities} onSubmit={this.addCity}/>
+                    <FilteredContent cities={this.state.cities}/>
+                </div>
 			</div>
 		);
 	}
